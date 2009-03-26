@@ -1,0 +1,19 @@
+
+非统计状态 705  500  (440)
+
+统计状态  705   570  (505)
+
+
+function   LastInput:   DWord;   
+  var   
+      LInput:   TLastInputInfo;   
+  begin   
+      LInput.cbSize   :=   SizeOf(TLastInputInfo);   
+      GetLastInputInfo(LInput);   
+      Result   :=   GetTickCount   -   LInput.dwTime;   
+  end;   
+    
+  procedure   TForm1.Timer1Timer(Sender:   TObject);   
+  begin   
+    Label1.Caption   :=   Format('System   Idle   since   %d   ms',   [LastInput]);   
+  end;

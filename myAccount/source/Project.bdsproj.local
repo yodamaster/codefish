@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2008-09-23 11:35:05.546.pas,D:\我的文档\RAD Studio\Projects\Unit1.pas=E:\delphiStudy\我的账本\main.pas</Transaction>
+    <Transaction>2008-09-23 11:35:05.546.dfm,D:\我的文档\RAD Studio\Projects\Unit1.dfm=E:\delphiStudy\我的账本\main.dfm</Transaction>
+    <Transaction>2008-09-23 11:35:09.265.bdsproj,D:\我的文档\RAD Studio\Projects\Project1.bdsproj=E:\delphiStudy\我的账本\Project.bdsproj</Transaction>
+    <Transaction>2008-09-23 15:47:19.281.pas,E:\delphiStudy\我的账本\Unit2.pas=E:\delphiStudy\我的账本\login.pas</Transaction>
+    <Transaction>2008-09-23 15:47:19.281.dfm,E:\delphiStudy\我的账本\Unit2.dfm=E:\delphiStudy\我的账本\login.dfm</Transaction>
+    <Transaction>2008-09-23 16:56:58.125.pas,E:\delphiStudy\我的账本\Unit1.pas=E:\delphiStudy\我的账本\dbConn.pas</Transaction>
+    <Transaction>2008-09-23 16:56:58.125.dfm,E:\delphiStudy\我的账本\Unit1.dfm=E:\delphiStudy\我的账本\dbConn.dfm</Transaction>
+    <Transaction>2008-09-23 19:44:40.312.pas,E:\delphiStudy\我的账本\Unit1.pas=E:\delphiStudy\我的账本\user.pas</Transaction>
+    <Transaction>2008-09-23 19:44:40.312.dfm,E:\delphiStudy\我的账本\Unit1.dfm=E:\delphiStudy\我的账本\user.dfm</Transaction>
+    <Transaction>2008-10-11 21:49:56.031.pas,E:\delphiStudy\我的账本\Unit1.pas=E:\delphiStudy\我的账本\modfiy.pas</Transaction>
+    <Transaction>2008-10-11 21:49:56.031.dfm,E:\delphiStudy\我的账本\Unit1.dfm=E:\delphiStudy\我的账本\modfiy.dfm</Transaction>
+    <Transaction>2008-10-12 15:23:17.328.pas,E:\delphiStudy\我的账本\Unit1.pas=E:\delphiStudy\我的账本\about.pas</Transaction>
+    <Transaction>2008-10-12 15:23:17.328.dfm,E:\delphiStudy\我的账本\Unit1.dfm=E:\delphiStudy\我的账本\about.dfm</Transaction>
+    <Transaction>2008-10-12 15:41:06.125.pas,E:\delphiStudy\我的账本\Unit1.pas=E:\delphiStudy\我的账本\dbEnCode.pas</Transaction>
+    <Transaction>2008-10-12 16:10:17.421.pas,E:\delphiStudy\我的账本\dbEnCode.pas=</Transaction>
+    <Transaction>2008-10-12 20:34:49.843.pas,E:\delphiStudy\我的账本\Unit1.pas=E:\delphiStudy\我的账本\MD5.pas</Transaction>
+    <Transaction>2008-10-12 20:39:59.484.pas,E:\delphiStudy\我的账本\Unit1.pas=E:\delphiStudy\我的账本\Base64.pas</Transaction>
+    <Transaction>2008-10-12 20:40:50.593.pas,E:\delphiStudy\我的账本\MD5.pas=</Transaction>
+    <Transaction>2008-10-16 15:42:28.796.pas,E:\delphiStudy\我的账本\Unit1.pas=E:\delphiStudy\我的账本\ClassEdt.pas</Transaction>
+    <Transaction>2008-10-16 15:42:28.796.dfm,E:\delphiStudy\我的账本\Unit1.dfm=E:\delphiStudy\我的账本\ClassEdt.dfm</Transaction>
+  </Transactions>
+</BorlandProject>
