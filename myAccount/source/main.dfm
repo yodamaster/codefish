@@ -1,15 +1,13 @@
 object mainForm: TmainForm
   Left = 0
   Top = 0
-  BorderIcons = [biSystemMenu, biMinimize]
-  BorderStyle = bsSingle
   Caption = #25105#23478#30340#36134#26412
-  ClientHeight = 538
-  ClientWidth = 699
+  ClientHeight = 561
+  ClientWidth = 791
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
-  Font.Height = -11
+  Font.Height = -13
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
@@ -17,14 +15,19 @@ object mainForm: TmainForm
   OnCreate = FormCreate
   OnDestroy = FormDestroy
   OnHide = FormHide
+  OnResize = FormResize
   OnShow = FormShow
+  DesignSize = (
+    791
+    561)
   PixelsPerInch = 96
-  TextHeight = 13
+  TextHeight = 16
   object Image1: TImage
-    Left = 525
-    Top = 3
+    Left = 618
+    Top = 4
     Width = 167
     Height = 34
+    Anchors = [akTop, akRight]
     Picture.Data = {
       0A544A504547496D61676548460000FFD8FFE000104A46494600010201004800
       480000FFE10BCD4578696600004D4D002A000000080007011200030000000100
@@ -593,16 +596,16 @@ object mainForm: TmainForm
   object PageControl: TPageControl
     Left = 8
     Top = 8
-    Width = 683
-    Height = 505
-    ActivePage = TabSheet1
+    Width = 776
+    Height = 533
+    ActivePage = TabSheet2
+    Anchors = [akLeft, akTop, akRight, akBottom]
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clHotLight
-    Font.Height = -11
+    Font.Height = -12
     Font.Name = 'Tahoma'
     Font.Style = []
     Images = ImageList1
-    MultiLine = True
     ParentFont = False
     TabHeight = 30
     TabOrder = 0
@@ -615,11 +618,14 @@ object mainForm: TmainForm
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
+      DesignSize = (
+        768
+        493)
       object GroupBox1: TGroupBox
         Left = 3
         Top = 16
-        Width = 167
-        Height = 369
+        Width = 175
+        Height = 409
         Caption = #26032#25903#20986
         Color = clBtnHighlight
         Font.Charset = DEFAULT_CHARSET
@@ -633,42 +639,42 @@ object mainForm: TmainForm
         TabOrder = 0
         object Label5: TLabel
           Left = 8
-          Top = 40
+          Top = 35
           Width = 36
           Height = 13
           Caption = #26085#26399#65306
         end
         object Label6: TLabel
           Left = 8
-          Top = 61
+          Top = 81
           Width = 36
           Height = 13
           Caption = #39033#30446#65306
         end
         object Label7: TLabel
-          Left = 8
-          Top = 112
+          Left = 7
+          Top = 152
           Width = 36
           Height = 13
           Caption = #37329#39069#65306
         end
         object Label8: TLabel
-          Left = 8
-          Top = 141
+          Left = 9
+          Top = 189
           Width = 36
           Height = 13
           Caption = #22791#27880#65306
         end
         object Label13: TLabel
-          Left = 144
-          Top = 112
+          Left = 143
+          Top = 152
           Width = 12
           Height = 13
           Caption = #20803
         end
         object outTips: TLabel
           Left = 16
-          Top = 350
+          Top = 390
           Width = 120
           Height = 13
           Caption = #24050#32463#25104#21151#21152#20837#19968#26465#35760#24405
@@ -680,8 +686,8 @@ object mainForm: TmainForm
           ParentFont = False
         end
         object classEditOut: TSpeedButton
-          Left = 43
-          Top = 57
+          Left = 158
+          Top = 78
           Width = 14
           Height = 22
           Caption = #8595
@@ -699,31 +705,31 @@ object mainForm: TmainForm
           TabOrder = 0
         end
         object outClass: TComboBox
-          Left = 8
+          Left = 50
           Top = 78
-          Width = 154
+          Width = 109
           Height = 21
           ItemHeight = 13
           TabOrder = 1
         end
         object outMoney: TEdit
-          Left = 55
-          Top = 108
+          Left = 54
+          Top = 148
           Width = 82
           Height = 21
           TabOrder = 2
           Text = '0'
         end
         object outAbout: TMemo
-          Left = 8
-          Top = 160
+          Left = 9
+          Top = 208
           Width = 150
           Height = 129
           TabOrder = 3
         end
         object outBtnAdd: TBitBtn
           Left = 8
-          Top = 310
+          Top = 350
           Width = 65
           Height = 33
           Caption = #28155#21152
@@ -733,7 +739,7 @@ object mainForm: TmainForm
         end
         object outBtnRedo: TBitBtn
           Left = 94
-          Top = 310
+          Top = 350
           Width = 65
           Height = 33
           Caption = #37325#20889
@@ -743,31 +749,38 @@ object mainForm: TmainForm
         end
       end
       object GroupBox2: TGroupBox
-        Left = 176
+        Left = 184
         Top = 16
-        Width = 489
-        Height = 369
+        Width = 583
+        Height = 476
+        Anchors = [akLeft, akTop, akRight, akBottom]
         Caption = #25903#20986#21382#21490#32426#24405
         TabOrder = 1
+        DesignSize = (
+          583
+          476)
         object Label1: TLabel
-          Left = 215
-          Top = 17
+          Left = 264
+          Top = 18
           Width = 36
           Height = 13
+          Anchors = [akTop, akRight]
           Caption = #21382#21490#65306
         end
         object Label2: TLabel
-          Left = 348
-          Top = 17
+          Left = 412
+          Top = 18
           Width = 12
           Height = 13
+          Anchors = [akTop]
           Caption = #21040
         end
         object outHistoryBtn: TSpeedButton
-          Left = 458
+          Left = 538
           Top = 12
           Width = 23
           Height = 22
+          Anchors = [akTop, akRight]
           Flat = True
           Glyph.Data = {
             DE010000424DDE01000000000000760000002800000024000000120000000100
@@ -790,138 +803,33 @@ object mainForm: TmainForm
           OnClick = outHistoryBtnClick
         end
         object outDate1: TDateTimePicker
-          Left = 253
+          Left = 306
           Top = 13
-          Width = 89
+          Width = 100
           Height = 21
+          Anchors = [akTop, akRight]
           Date = 39714.627739976850000000
           Format = 'yyyy-MM-dd'
           Time = 39714.627739976850000000
           TabOrder = 0
         end
         object outDate2: TDateTimePicker
-          Left = 366
+          Left = 430
           Top = 13
-          Width = 86
+          Width = 102
           Height = 21
+          Anchors = [akTop, akRight]
           Date = 39714.627919733790000000
           Format = 'yyyy-MM-dd'
           Time = 39714.627919733790000000
           TabOrder = 1
         end
-      end
-      object outList: TListView
-        Left = 184
-        Top = 56
-        Width = 473
-        Height = 321
-        Columns = <
-          item
-            Caption = #26085#26399
-          end
-          item
-            Caption = #39033#30446
-          end
-          item
-            Caption = #37329#39069
-          end
-          item
-            Caption = #22791#27880
-          end>
-        HideSelection = False
-        ReadOnly = True
-        RowSelect = True
-        PopupMenu = listMenu
-        TabOrder = 2
-        ViewStyle = vsReport
-        OnDblClick = muModifyClick
-      end
-    end
-    object TabSheet2: TTabSheet
-      Caption = #36164#37329#25910#20837'    '
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ImageIndex = 1
-      ParentFont = False
-      ExplicitLeft = 0
-      ExplicitTop = 0
-      ExplicitWidth = 0
-      ExplicitHeight = 0
-      object GroupBox3: TGroupBox
-        Left = 176
-        Top = 16
-        Width = 489
-        Height = 369
-        Caption = #25910#20837#21382#21490#32426#24405
-        TabOrder = 0
-        object Label3: TLabel
-          Left = 215
-          Top = 17
-          Width = 36
-          Height = 13
-          Caption = #21382#21490#65306
-        end
-        object Label4: TLabel
-          Left = 348
-          Top = 17
-          Width = 12
-          Height = 13
-          Caption = #21040
-        end
-        object inHistoryBtn: TSpeedButton
-          Left = 458
-          Top = 12
-          Width = 23
-          Height = 22
-          Flat = True
-          Glyph.Data = {
-            DE010000424DDE01000000000000760000002800000024000000120000000100
-            0400000000006801000000000000000000001000000000000000000000000000
-            80000080000000808000800000008000800080800000C0C0C000808080000000
-            FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00333333444444
-            33333333333F8888883F33330000324334222222443333388F3833333388F333
-            000032244222222222433338F8833FFFFF338F3300003222222AAAAA22243338
-            F333F88888F338F30000322222A33333A2224338F33F8333338F338F00003222
-            223333333A224338F33833333338F38F00003222222333333A444338FFFF8F33
-            3338888300003AAAAAAA33333333333888888833333333330000333333333333
-            333333333333333333FFFFFF000033333333333344444433FFFF333333888888
-            00003A444333333A22222438888F333338F3333800003A2243333333A2222438
-            F38F333333833338000033A224333334422224338338FFFFF8833338000033A2
-            22444442222224338F3388888333FF380000333A2222222222AA243338FF3333
-            33FF88F800003333AA222222AA33A3333388FFFFFF8833830000333333AAAAAA
-            3333333333338888883333330000333333333333333333333333333333333333
-            0000}
-          NumGlyphs = 2
-          OnClick = inHistoryBtnClick
-        end
-        object inDate1: TDateTimePicker
-          Left = 253
-          Top = 13
-          Width = 89
-          Height = 21
-          Date = 39714.627739976850000000
-          Format = 'yyyy-MM-dd'
-          Time = 39714.627739976850000000
-          TabOrder = 0
-        end
-        object inDate2: TDateTimePicker
-          Left = 366
-          Top = 13
-          Width = 86
-          Height = 21
-          Date = 39714.627919733790000000
-          Format = 'yyyy-MM-dd'
-          Time = 39714.627919733790000000
-          TabOrder = 1
-        end
-        object inList: TListView
-          Left = 8
-          Top = 40
-          Width = 473
-          Height = 321
+        object outList: TListView
+          Left = 7
+          Top = 41
+          Width = 569
+          Height = 425
+          Anchors = [akLeft, akTop, akRight, akBottom]
           Columns = <
             item
               Caption = #26085#26399
@@ -944,11 +852,131 @@ object mainForm: TmainForm
           OnDblClick = muModifyClick
         end
       end
+    end
+    object TabSheet2: TTabSheet
+      Caption = #36164#37329#25910#20837'    '
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ImageIndex = 1
+      ParentFont = False
+      DesignSize = (
+        768
+        493)
+      object GroupBox3: TGroupBox
+        Left = 184
+        Top = 16
+        Width = 581
+        Height = 474
+        Anchors = [akLeft, akTop, akRight, akBottom]
+        Caption = #25910#20837#21382#21490#32426#24405
+        TabOrder = 0
+        DesignSize = (
+          581
+          474)
+        object Label3: TLabel
+          Left = 259
+          Top = 19
+          Width = 36
+          Height = 13
+          Anchors = [akTop, akRight]
+          Caption = #21382#21490#65306
+        end
+        object Label4: TLabel
+          Left = 409
+          Top = 18
+          Width = 12
+          Height = 13
+          Anchors = [akTop, akRight]
+          Caption = #21040
+        end
+        object inHistoryBtn: TSpeedButton
+          Left = 536
+          Top = 13
+          Width = 23
+          Height = 22
+          Anchors = [akTop, akRight]
+          Flat = True
+          Glyph.Data = {
+            DE010000424DDE01000000000000760000002800000024000000120000000100
+            0400000000006801000000000000000000001000000000000000000000000000
+            80000080000000808000800000008000800080800000C0C0C000808080000000
+            FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00333333444444
+            33333333333F8888883F33330000324334222222443333388F3833333388F333
+            000032244222222222433338F8833FFFFF338F3300003222222AAAAA22243338
+            F333F88888F338F30000322222A33333A2224338F33F8333338F338F00003222
+            223333333A224338F33833333338F38F00003222222333333A444338FFFF8F33
+            3338888300003AAAAAAA33333333333888888833333333330000333333333333
+            333333333333333333FFFFFF000033333333333344444433FFFF333333888888
+            00003A444333333A22222438888F333338F3333800003A2243333333A2222438
+            F38F333333833338000033A224333334422224338338FFFFF8833338000033A2
+            22444442222224338F3388888333FF380000333A2222222222AA243338FF3333
+            33FF88F800003333AA222222AA33A3333388FFFFFF8833830000333333AAAAAA
+            3333333333338888883333330000333333333333333333333333333333333333
+            0000}
+          NumGlyphs = 2
+          OnClick = inHistoryBtnClick
+          ExplicitLeft = 538
+        end
+        object inDate1: TDateTimePicker
+          Left = 303
+          Top = 14
+          Width = 100
+          Height = 21
+          Anchors = [akTop, akRight]
+          Date = 39714.627739976850000000
+          Format = 'yyyy-MM-dd'
+          Time = 39714.627739976850000000
+          TabOrder = 0
+        end
+        object inDate2: TDateTimePicker
+          Left = 429
+          Top = 14
+          Width = 100
+          Height = 21
+          Anchors = [akTop, akRight]
+          Date = 39714.627919733790000000
+          Format = 'yyyy-MM-dd'
+          Time = 39714.627919733790000000
+          TabOrder = 1
+        end
+        object inList: TListView
+          Left = 7
+          Top = 41
+          Width = 567
+          Height = 423
+          Anchors = [akLeft, akTop, akRight, akBottom]
+          Columns = <
+            item
+              Caption = #26085#26399
+            end
+            item
+              Caption = #39033#30446
+            end
+            item
+              Caption = #37329#39069
+            end
+            item
+              Caption = #22791#27880
+            end>
+          HideSelection = False
+          ReadOnly = True
+          RowSelect = True
+          PopupMenu = listMenu
+          TabOrder = 2
+          ViewStyle = vsReport
+          OnDblClick = muModifyClick
+          ExplicitWidth = 569
+          ExplicitHeight = 425
+        end
+      end
       object GroupBox4: TGroupBox
         Left = 3
         Top = 16
-        Width = 167
-        Height = 369
+        Width = 175
+        Height = 409
         Caption = #26032#25910#20837
         TabOrder = 1
         object Label9: TLabel
@@ -960,35 +988,35 @@ object mainForm: TmainForm
         end
         object Label10: TLabel
           Left = 8
-          Top = 62
+          Top = 81
           Width = 36
           Height = 13
           Caption = #39033#30446#65306
         end
         object Label11: TLabel
           Left = 8
-          Top = 112
+          Top = 151
           Width = 36
           Height = 13
           Caption = #37329#39069#65306
         end
         object Label12: TLabel
           Left = 8
-          Top = 141
+          Top = 190
           Width = 36
           Height = 13
           Caption = #22791#27880#65306
         end
         object Label14: TLabel
           Left = 144
-          Top = 112
+          Top = 151
           Width = 12
           Height = 13
           Caption = #20803
         end
         object inTips: TLabel
           Left = 16
-          Top = 350
+          Top = 391
           Width = 120
           Height = 13
           Caption = #24050#32463#25104#21151#21152#20837#19968#26465#35760#24405
@@ -1000,8 +1028,8 @@ object mainForm: TmainForm
           ParentFont = False
         end
         object classEdtIn: TSpeedButton
-          Left = 43
-          Top = 58
+          Left = 158
+          Top = 78
           Width = 14
           Height = 22
           Caption = #8595
@@ -1019,16 +1047,16 @@ object mainForm: TmainForm
           TabOrder = 0
         end
         object inClass: TComboBox
-          Left = 8
+          Left = 50
           Top = 78
-          Width = 155
+          Width = 109
           Height = 21
-          ItemHeight = 0
+          ItemHeight = 13
           TabOrder = 1
         end
         object inMoney: TEdit
           Left = 55
-          Top = 108
+          Top = 147
           Width = 82
           Height = 21
           TabOrder = 2
@@ -1036,14 +1064,14 @@ object mainForm: TmainForm
         end
         object inAbout: TMemo
           Left = 8
-          Top = 160
+          Top = 209
           Width = 150
           Height = 129
           TabOrder = 3
         end
         object inBtnAdd: TBitBtn
           Left = 8
-          Top = 310
+          Top = 351
           Width = 65
           Height = 33
           Caption = #28155#21152
@@ -1053,7 +1081,7 @@ object mainForm: TmainForm
         end
         object inBtnRedo: TBitBtn
           Left = 94
-          Top = 310
+          Top = 351
           Width = 65
           Height = 33
           Caption = #37325#20889
@@ -1072,17 +1100,20 @@ object mainForm: TmainForm
       Font.Style = []
       ImageIndex = 2
       ParentFont = False
-      ExplicitLeft = 0
-      ExplicitTop = 0
-      ExplicitWidth = 0
-      ExplicitHeight = 0
+      DesignSize = (
+        768
+        493)
       object groupboxtj: TGroupBox
         Left = 3
         Top = 16
-        Width = 669
+        Width = 764
         Height = 49
+        Anchors = [akLeft, akTop, akRight]
         Caption = #32479#35745
         TabOrder = 0
+        DesignSize = (
+          764
+          49)
         object Label15: TLabel
           Left = 19
           Top = 22
@@ -1124,10 +1155,11 @@ object mainForm: TmainForm
           OnClick = statBtnClick
         end
         object exportBtn: TSpeedButton
-          Left = 578
+          Left = 682
           Top = 17
           Width = 73
           Height = 22
+          Anchors = [akTop, akRight]
           Caption = #23548#20986#32479#35745#25968#25454
           Flat = True
           Font.Charset = DEFAULT_CHARSET
@@ -1180,20 +1212,25 @@ object mainForm: TmainForm
       object GroupBox5: TGroupBox
         Left = 3
         Top = 71
-        Width = 669
-        Height = 391
+        Width = 764
+        Height = 421
+        Anchors = [akLeft, akTop, akRight, akBottom]
         TabOrder = 1
+        DesignSize = (
+          764
+          421)
         object imgPie: TImage
-          Left = 484
+          Left = 423
           Top = 248
-          Width = 177
-          Height = 135
+          Width = 200
+          Height = 161
         end
         object statList: TListView
-          Left = 105
+          Left = 160
           Top = 9
-          Width = 241
+          Width = 257
           Height = 372
+          Anchors = [akLeft, akTop, akBottom]
           Columns = <
             item
               Caption = #26085#26399
@@ -1217,10 +1254,11 @@ object mainForm: TmainForm
           OnClick = statListClick
         end
         object statMoreList: TListView
-          Left = 352
+          Left = 423
           Top = 9
-          Width = 310
+          Width = 333
           Height = 233
+          Anchors = [akLeft, akTop, akRight]
           Columns = <
             item
               Caption = #26085#26399
@@ -1245,10 +1283,11 @@ object mainForm: TmainForm
           ViewStyle = vsReport
         end
         object statInfo: TMemo
-          Left = 352
+          Left = 629
           Top = 248
           Width = 126
-          Height = 136
+          Height = 161
+          Anchors = [akLeft, akTop, akRight, akBottom]
           Lines.Strings = (
             #32479#35745#22825#25968#65306' 123'
             #25910#20837#65306' 123458'
@@ -1263,8 +1302,9 @@ object mainForm: TmainForm
         object classView: TListView
           Left = 8
           Top = 9
-          Width = 91
+          Width = 146
           Height = 372
+          Anchors = [akLeft, akTop, akBottom]
           Columns = <
             item
               Caption = #39033#30446
@@ -1281,8 +1321,8 @@ object mainForm: TmainForm
           ViewStyle = vsReport
         end
         object waitPn: TPanel
-          Left = 240
-          Top = 128
+          Left = 282
+          Top = 144
           Width = 177
           Height = 41
           BevelInner = bvLowered
@@ -1295,10 +1335,37 @@ object mainForm: TmainForm
           ParentFont = False
           TabOrder = 4
         end
+        object btn1: TBitBtn
+          Left = 8
+          Top = 389
+          Width = 146
+          Height = 25
+          Anchors = [akLeft, akBottom]
+          Caption = #36873#25321#38656#35201#32479#35745#30340#39033#30446
+          TabOrder = 5
+        end
+        object btn2: TBitBtn
+          Left = 173
+          Top = 389
+          Width = 105
+          Height = 25
+          Anchors = [akLeft, akBottom]
+          Caption = #32479#35745#22270#34920
+          TabOrder = 6
+        end
+        object btn3: TBitBtn
+          Left = 297
+          Top = 389
+          Width = 119
+          Height = 25
+          Anchors = [akLeft, akBottom]
+          Caption = #23548#20986#32479#35745#25968#25454
+          TabOrder = 7
+        end
       end
     end
     object TabSheet4: TTabSheet
-      Caption = #37197#32622
+      Caption = #37197#32622'  '
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -11
@@ -1306,13 +1373,9 @@ object mainForm: TmainForm
       Font.Style = []
       ImageIndex = 3
       ParentFont = False
-      ExplicitLeft = 0
-      ExplicitTop = 0
-      ExplicitWidth = 0
-      ExplicitHeight = 0
       object Label17: TLabel
         Left = 56
-        Top = 40
+        Top = 77
         Width = 65
         Height = 13
         Caption = #36134#25143#20449#24687#65306
@@ -1325,21 +1388,21 @@ object mainForm: TmainForm
       end
       object pzUser: TLabel
         Left = 72
-        Top = 72
+        Top = 109
         Width = 111
         Height = 13
         Caption = #24403#21069#30331#24405#24080#21495#65306' '#37101#37101
       end
       object pzLogt: TLabel
         Left = 72
-        Top = 97
+        Top = 134
         Width = 165
         Height = 13
         Caption = #19978#27425#30331#24405#26102#38388#65306'2008-5-23 16:23'
       end
       object Label20: TLabel
         Left = 56
-        Top = 138
+        Top = 175
         Width = 65
         Height = 13
         Caption = #20462#25913#23494#30721#65306
@@ -1352,7 +1415,7 @@ object mainForm: TmainForm
       end
       object Label21: TLabel
         Left = 58
-        Top = 230
+        Top = 287
         Width = 65
         Height = 13
         Caption = #38144#27585#24080#25143#65306
@@ -1365,14 +1428,14 @@ object mainForm: TmainForm
       end
       object Label22: TLabel
         Left = 82
-        Top = 278
+        Top = 335
         Width = 60
         Height = 13
         Caption = #39564#35777#23494#30721#65306
       end
       object Label23: TLabel
         Left = 82
-        Top = 252
+        Top = 309
         Width = 192
         Height = 13
         Caption = #21024#38500#24080#21495#20449#24687#65292#26080#27861#24674#22797#65292#35831#24910#37325#12290
@@ -1385,7 +1448,7 @@ object mainForm: TmainForm
       end
       object Label24: TLabel
         Left = 72
-        Top = 168
+        Top = 205
         Width = 180
         Height = 13
         Caption = #20445#25252#24744#30340#24080#21495#23433#20840#65292#35831#20462#25913#23494#30721#12290
@@ -1398,7 +1461,7 @@ object mainForm: TmainForm
       end
       object Label25: TLabel
         Left = 376
-        Top = 40
+        Top = 71
         Width = 65
         Height = 13
         Caption = #20840#23616#23646#24615#65306
@@ -1411,14 +1474,14 @@ object mainForm: TmainForm
       end
       object Label28: TLabel
         Left = 432
-        Top = 72
+        Top = 103
         Width = 132
         Height = 13
         Caption = #20998#38047#19981#25805#20316#33258#21160#38145#23450#30028#38754
       end
       object Label18: TLabel
         Left = 376
-        Top = 230
+        Top = 287
         Width = 97
         Height = 13
         Caption = #25903#20986'/'#25910#20837#39033#30446#65306
@@ -1431,7 +1494,7 @@ object mainForm: TmainForm
       end
       object Label19: TLabel
         Left = 402
-        Top = 252
+        Top = 309
         Width = 228
         Height = 13
         Caption = #21487#20197#28155#21152#12289#20462#25913#12289#21024#38500#25903#20986#25110#32773#25910#20837#39033#30446#12290
@@ -1444,7 +1507,7 @@ object mainForm: TmainForm
       end
       object pzPass: TEdit
         Left = 148
-        Top = 275
+        Top = 332
         Width = 114
         Height = 21
         PasswordChar = '#'
@@ -1453,30 +1516,30 @@ object mainForm: TmainForm
       end
       object BitBtn1: TBitBtn
         Left = 172
-        Top = 302
+        Top = 359
         Width = 75
         Height = 25
-        Caption = #30830#23450#38144#27585
+        Caption = #38144'  '#27585
         TabOrder = 1
         OnClick = BitBtn1Click
       end
       object BitBtn2: TBitBtn
         Left = 162
-        Top = 194
+        Top = 231
         Width = 75
         Height = 25
-        Caption = #28857#20987#20462#25913
+        Caption = #20462'  '#25913
         TabOrder = 2
         OnClick = BitBtn2Click
       end
       object GroupBox6: TGroupBox
-        Left = 16
-        Top = 344
+        Left = 24
+        Top = 408
         Width = 633
         Height = 34
         TabOrder = 3
         object Label26: TLabel
-          Left = 28
+          Left = 46
           Top = 10
           Width = 411
           Height = 13
@@ -1485,7 +1548,7 @@ object mainForm: TmainForm
             '.com           blog:   '
         end
         object Label27: TLabel
-          Left = 450
+          Left = 469
           Top = 10
           Width = 137
           Height = 13
@@ -1502,7 +1565,7 @@ object mainForm: TmainForm
       end
       object pzFreeTime: TEdit
         Left = 402
-        Top = 69
+        Top = 100
         Width = 25
         Height = 21
         TabOrder = 4
@@ -1510,7 +1573,7 @@ object mainForm: TmainForm
       end
       object pzTray: TCheckBox
         Left = 402
-        Top = 102
+        Top = 133
         Width = 156
         Height = 17
         Caption = #26174#31034#31995#32479#25176#30424#22270#26631
@@ -1518,7 +1581,7 @@ object mainForm: TmainForm
       end
       object pzDisReg: TCheckBox
         Left = 402
-        Top = 131
+        Top = 162
         Width = 156
         Height = 17
         Caption = #31105#27490#26032#29992#25143#27880#20876
@@ -1526,19 +1589,19 @@ object mainForm: TmainForm
       end
       object BitBtn3: TBitBtn
         Left = 503
-        Top = 154
-        Width = 55
+        Top = 185
+        Width = 61
         Height = 25
-        Caption = #30830' '#23450
+        Caption = #20445'  '#23384
         TabOrder = 7
         OnClick = BitBtn3Click
       end
       object BitBtn4: TBitBtn
         Left = 503
-        Top = 278
+        Top = 335
         Width = 75
         Height = 25
-        Caption = #39033#30446#31649#29702
+        Caption = #31649'  '#29702
         TabOrder = 8
         OnClick = BitBtn4Click
       end
@@ -1546,8 +1609,8 @@ object mainForm: TmainForm
   end
   object statusbar: TStatusBar
     Left = 0
-    Top = 519
-    Width = 699
+    Top = 542
+    Width = 791
     Height = 19
     Panels = <
       item
@@ -1563,22 +1626,25 @@ object mainForm: TmainForm
       item
         Alignment = taCenter
         Text = '2008-12-12 12:12:12'
-        Width = 130
+        Width = 160
       end
       item
         Text = #27426#36814#20351#29992#65292#29256#26412'V1.0'
         Width = 50
       end>
+    ExplicitLeft = 8
+    ExplicitTop = 560
+    ExplicitWidth = 793
   end
   object dateTimer: TTimer
     OnTimer = dateTimerTimer
-    Left = 456
-    Top = 24
+    Left = 464
+    Top = 40
   end
   object listMenu: TPopupMenu
     OnPopup = listMenuPopup
-    Left = 360
-    Top = 24
+    Left = 368
+    Top = 40
     object muModify: TMenuItem
       Caption = '::  '#20462#25913'(&E)'
       OnClick = muModifyClick
@@ -1589,8 +1655,8 @@ object mainForm: TmainForm
     end
   end
   object listImg: TImageList
-    Left = 392
-    Top = 24
+    Left = 400
+    Top = 40
     Bitmap = {
       494C010101000400040010001000FFFFFFFFFF00FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000400000001000000001002000000000000010
@@ -1731,8 +1797,8 @@ object mainForm: TmainForm
       FFFF000000000000FFFF000000000000}
   end
   object ImageList1: TImageList
-    Left = 424
-    Top = 24
+    Left = 432
+    Top = 40
     Bitmap = {
       494C010104000900040010001000FFFFFFFFFF00FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000400000002000000001002000000000000020
@@ -2109,12 +2175,12 @@ object mainForm: TmainForm
       0000000000000000000000000000000000000000000000000000000000000000
       000000000000000000000000000000000000000000000000000000000000}
     PopupMenu = trayMenu
-    Left = 488
-    Top = 24
+    Left = 496
+    Top = 40
   end
   object trayMenu: TPopupMenu
-    Left = 488
-    Top = 56
+    Left = 528
+    Top = 40
     object muShow: TMenuItem
       Caption = #26174#31034'(&S)'
       OnClick = muShowClick
@@ -2134,18 +2200,18 @@ object mainForm: TmainForm
   end
   object freeTimer: TTimer
     OnTimer = freeTimerTimer
-    Left = 456
-    Top = 56
+    Left = 560
+    Top = 40
   end
   object ApplicationEvents1: TApplicationEvents
     OnMinimize = ApplicationEvents1Minimize
-    Left = 360
-    Top = 56
+    Left = 336
+    Top = 48
   end
   object saveDlg: TSaveDialog
     DefaultExt = 'xls'
     Filter = 'html'#32593#39029' (*.html)|*.html|xls'#34920#26684' (*.xls)|*.xls|doc'#25991#26723'(*.doc)|*.doc'
-    Left = 392
-    Top = 56
+    Left = 592
+    Top = 40
   end
 end

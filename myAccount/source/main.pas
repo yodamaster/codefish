@@ -112,6 +112,9 @@ type
     BitBtn4: TBitBtn;
     classEditOut: TSpeedButton;
     classEdtIn: TSpeedButton;
+    btn1: TBitBtn;
+    btn2: TBitBtn;
+    btn3: TBitBtn;
     procedure FormCreate(Sender: TObject);
     procedure dateTimerTimer(Sender: TObject);
     procedure PageControlChange(Sender: TObject);
@@ -143,6 +146,7 @@ type
     procedure BitBtn4Click(Sender: TObject);
     procedure classEditOutClick(Sender: TObject);
     procedure classEdtInClick(Sender: TObject);
+    procedure FormResize(Sender: TObject);
   private
     { Private declarations }
     procedure SetListViewCol(flag:String);//设置listview列
@@ -250,7 +254,7 @@ begin
     SetDefaultDate('in');
     SetDefaultDate('stat');
     SetStatus(0,'就绪');
-    reSetSize('');
+    //reSetSize('');
     waitPn.Visible:=false;
     exportBtn.Enabled:=false;
 
@@ -1065,18 +1069,18 @@ begin
         begin
           Caption:=m_title + ' 消费支出';
           ReadClass('out');
-          reSetSize('');
+          //reSetSize('');
         end;
       1:  //收入
         begin
-          Caption:=m_title + ' 资金收入';
+          Caption:=m_title + ' 资金收入 ';
           ReadClass('in');
-          reSetSize('');
+          //reSetSize('');
         end;
       2:  //统计
         begin
-          Caption:=m_title + ' 统计';
-          reSetSize('TJ');
+          Caption:=m_title + ' 统计 ';
+          //reSetSize('TJ');
           if Not m_bstat then
           begin
             DrawPie(imgPie,0,0,'支出 ','收入 ');
@@ -1090,8 +1094,8 @@ begin
         end;
       3:   //设置
         begin
-          Caption:=m_title + ' 设置';
-          reSetSize('');
+          Caption:=m_title + ' 配置 ';
+          //reSetSize('');
           pzPass.Text:='';
           pzFreeTime.Text:=IntToStr(dbConns.m_freeTime);
           pzTray.Checked:=dbConns.m_bTray;
@@ -1412,6 +1416,14 @@ procedure TmainForm.FormHide(Sender: TObject);
 begin
     muShow.Caption:='显示(&S)';
 end;
+//resize
+procedure TmainForm.FormResize(Sender: TObject);
+begin
+    //
+    if Height<595 then Height := 595;
+    if Width<798 then Width := 798;
+end;
+
 procedure TmainForm.FormShow(Sender: TObject);
 begin
     muShow.Caption:='隐藏(&S)';
@@ -1506,7 +1518,8 @@ begin
     end;
     tit:=s1+' 至 '+s2+' 收支统计记录';
 
-    htm:='<html><head><title>'+tit+'</title><style>body,td{font-size:14px}</style></head><body>';
+    htm:='<html><head><meta http-equiv="Content-Type" content="text/html; charset=gb2312" />';
+    htm:=htm+'<title>'+tit+'</title><style>body,td{font-size:14px}</style></head><body>';
     htm:=htm+'<h3>'+ tit +'</h3>';
 
     s1:='<table border=1 width=400>';

@@ -1251,7 +1251,7 @@ object logForm: TlogForm
   object btnClose: TBitBtn
     Left = 255
     Top = 152
-    Width = 34
+    Width = 50
     Height = 25
     Caption = #36864#20986
     TabOrder = 4
